@@ -18,20 +18,20 @@
                     if(flag2 == 0){
                         if(a < 3){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + index++ +'.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
                             setTimeout(() => {
-                                $('#human').attr('src', './image/duizhan' + flag1 + flag2 + index++ + '.png');
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
                             }, 1000);
                             if(a<3){setTimeout(() => {
-                                $('#human').attr('src', './image/duizhan' + flag1 + flag2 + index++ + '.png');
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
                             }, 2000);}
                             if(a < 3){
                                 setTimeout(() => {
-                                    $('#human').attr('src', './image/duizhan' + flag1 + flag2 + index++ + '.png');
+                                    $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
                                 }, 3000);
                                 if(a<2){
                                     setTimeout(() => {
-                                    $('#human').attr('src', './image/duizhan' + flag1 + flag2 + index++ + '.png');
+                                    $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
                                 }, 4000);}
                             }
                             
@@ -39,6 +39,7 @@
                                 setTimeout(() => {
                                     a = 0;
                                 flag2 = flag2 + 1 ;
+                                index = 0;
                                 $('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
                                 document.getElementById("mytc").style.display="block";
                                 }, 2000);
@@ -52,9 +53,37 @@
                         }
                     }
                     if(flag2 == 1){
+
                         if(a < 2){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);
+                            
+                            if(a==1){
+                                setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 3000);
+                                setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 4000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 5000);
+                            
+                            }
+                            if(a==2){setTimeout(() => {
+                                
+                                a = 0;
+                                flag2 = flag2 + 1 ;
+                                index = 0;
+                                $('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
+                                document.getElementById("mytc").style.display="block";
+                                
+                            }, 3000);}
+
+
                         } else {
                             a = 0;
                             flag2 = flag2 + 1;
@@ -65,7 +94,27 @@
                     if(flag2 == 2){
                         if(a < 3){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 1000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 3000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 4000);
+                            setTimeout(() => {
+                                if(a == 2){
+                                a = 0;
+                                index = 0;
+                                flag2 = flag2+1;
+                                document.getElementById("mytc").style.display="block";
+                            }
+                            }, 9000);
                         } else {
                             a = 0;
                             
@@ -77,18 +126,66 @@
                 //火
                 if(flag1 == 1){
                     if(flag2 == 0){
-                        if(a < 3){
+                        if(a < 2){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 1000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 3000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 4000);
+                            
+                            setTimeout(() => {
+                                if(a == 2){
+                                a = 0;
+                                index = 0;
+                                document.getElementById("mytc").style.display="block";
+                            }
+                            }, 5000);
+                            
+                            
                         } else {
                             a = 0;
                             document.getElementById("mytc1").style.display="block";
+                            $('#human').attr('src', './image/' +zhuyemian+'.png');
                         }
                     }
                     if(flag2 == 1){
                         if(a < 3){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 1000);
+                            if(a<3){setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);}
+                            if(a < 3){
+                                setTimeout(() => {
+                                    $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                                }, 3000);
+                                if(a<2){
+                                    setTimeout(() => {
+                                    $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                                }, 4000);}
+                            }
+                            
+                            if(a == 3){
+                                setTimeout(() => {
+                                    a = 0;
+                                flag2 = flag2 + 1 ;
+                                index = 0;
+                                $('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
+                                document.getElementById("mytc").style.display="block";
+                                }, 2000);
+                            }
                         } else {
                             a = 0;
                             flag2 = flag2 + 1;
@@ -99,7 +196,33 @@
                     if(flag2 == 2){
                         if(a < 2){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);
+                            
+                            if(a==1){
+                                setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 3000);
+                                setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 4000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 5000);
+                            
+                            }
+                            if(a==2){setTimeout(() => {
+                                
+                                a = 0;
+                                flag2 = flag2 + 1 ;
+                                index = 0;
+                                $('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
+                                document.getElementById("mytc").style.display="block";
+                                
+                            }, 3000);}
+                            
                         } else {
                             a = 0;
                             flag2 = flag2 + 1;
@@ -114,18 +237,65 @@
                     if(flag2 == 0){
                         if(a < 2){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);
+                            
+                            if(a==1){
+                                setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 3000);
+                                setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 4000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 5000);
+                            
+                            }
+                            if(a==2){setTimeout(() => {
+                                
+                                a = 0;
+                                flag2 = flag2 + 1 ;
+                                index = 0;
+                                $('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
+                                document.getElementById("mytc").style.display="block";
+                                
+                            }, 3000);}
+                                
+                            
                         } else {
-                            a = 0;
-                            flag2 = flag2 + 1;
-                            $('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
-                            document.getElementById("mytc").style.display="block";
+                            //a = 0;
+                            //flag2 = flag2 + 1;
+                            //$('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
+                            //document.getElementById("mytc").style.display="block";
                         }
                     }
                     if(flag2 == 1){
                         if(a < 3){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 1000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 3000);
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 4000);
+                            
+                            setTimeout(() => {
+                                if(a == 2){
+                                a = 0;
+                                index = 0;
+                                document.getElementById("mytc").style.display="block";
+                            }
+                            }, 5000);
                         } else {
                             a = 0;
                             document.getElementById("mytc1").style.display="block";;
@@ -134,7 +304,32 @@
                     if(flag2 == 2){
                         if(a < 3){
                             a = a + 1;
-                            $('#human').attr('src', './image/duizhan' + flag1 + flag2 + '.png');
+                            $('#human').attr('src', './image/' + flag1 + flag2 + index++ +'.png');
+                            setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 1000);
+                            if(a<3){setTimeout(() => {
+                                $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                            }, 2000);}
+                            if(a < 3){
+                                setTimeout(() => {
+                                    $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                                }, 3000);
+                                if(a<2){
+                                    setTimeout(() => {
+                                    $('#human').attr('src', './image/' + flag1 + flag2 + index++ + '.png');
+                                }, 4000);}
+                            }
+                            
+                            if(a == 3){
+                                setTimeout(() => {
+                                    a = 0;
+                                flag2 = flag2 + 1 ;
+                                index = 0;
+                                $('#mytc').attr('src', './image/pkmtc' + flag2 + '.png');
+                                document.getElementById("mytc").style.display="block";
+                                }, 2000);
+                            }
                         } else {
                             a = 0;
                             flag2 = flag2+1;
@@ -152,17 +347,17 @@
             $('#hideButton2').click(function(){
                 flag1 = 0;
                 $('#mytc').hide();
-                $('#human').attr('src', './image/duizhan' + flag1 +flag2 +index+ '.png');
+                $('#human').attr('src', './image/' + flag1 +flag2 +index+ '.png');
             });
             $('#hideButton3').click(function(){
                 flag1 = 1;
                 $('#mytc').hide();
-                $('#human').attr('src', './image/duizhan' + flag1 +flag2 +index+ '.png');
+                $('#human').attr('src', './image/' + flag1 +flag2 +index+ '.png');
             });
             $('#hideButton4').click(function(){
                 flag1 = 2;
                 $('#mytc').hide();
-                $('#human').attr('src', './image/duizhan' + flag1 + flag2 +index+ '.png');
+                $('#human').attr('src', './image/' + flag1 + flag2 +index+ '.png');
             });
             $('#hideButton5').click(function(){
 
@@ -303,7 +498,7 @@
     <div class="container">
         <div class="bg">
             <button id="hideButton1"></button>
-            <img class="bgimg" src="./image/Map001.png" id="human">
+            <img class="bgimg" src="./image/zhuyemian.png" id="human">
             <div class="tc" id="mytc">
                 <p></p>
                 <button id="hideButton2"></button>
@@ -317,3 +512,4 @@
     </div>
 </body>
 </html>
+
