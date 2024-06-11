@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通关</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('pokemon/zhenbei.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .text {
+            font-size: 24px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            max-width: 600px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        .hidden-button {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="text" id="text"></div>
+    <button class="hidden-button" id="hidden-button"></button>
+    <script>
+        const text = "恭喜你打败三大道馆的敌人，真是一件不容易的事情啊。感谢你对宝可梦的研究做出的贡献。";
+        const textElement = document.getElementById('text');
+        let index = 0;
+
+        function showText() {
+            if (index < text.length) {
+                textElement.innerHTML += text[index];
+                index++;
+                setTimeout(showText, 100); // Adjust the time interval as needed
+            }
+        }
+
+        function redirect() {
+            window.location.href = "https://seventxjy.github.io/pokemen/"; // 跳转的页面链接
+        }
+
+        document.getElementById('hidden-button').addEventListener('click', redirect);
+
+        showText();
+    </script>
+</body>
+</html>
